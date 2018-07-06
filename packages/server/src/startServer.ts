@@ -22,7 +22,7 @@ export const startServer = async () => {
   }
 
   const server = new GraphQLServer({
-    schema: genSchema() as any,
+    schema: genSchema(),
     context: ({ request }) => ({
       redis,
       url: request.protocol + "://" + request.get("host"),

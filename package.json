@@ -1,5 +1,4 @@
 {
-"private": "true",
-"workspace": ["packages/*"]
+    "private": true,
+    "workspaces": ["packages/*"]
 }
-
