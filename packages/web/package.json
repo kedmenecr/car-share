@@ -26,7 +26,8 @@
     "react-dom": "^16.4.0",
     "react-router-dom": "^4.3.1",
     "react-scripts-ts": "^2.16.0",
-    "yup": "^0.25.1"
+    "yup": "^0.25.1",
+    "@car-share/common": "1.0.0"
   },
   "scripts": {
     "start": "react-scripts-ts start",
