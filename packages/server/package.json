@@ -49,14 +49,13 @@
     "node-fetch": "^2.1.2",
     "pg": "^7.4.1",
     "rate-limit-redis": "^1.4.0",
-    "react-router-dom": "^4.3.1",
     "reflect-metadata": "^0.1.12",
     "request-promise": "^4.2.2",
     "sparkpost": "^2.1.2",
     "typeorm": "0.2.0",
     "uuid": "^3.2.1",
     "yup": "^0.24.1",
-    "@car-share/commin": "1.0.0"
+    "@car-share/common": "1.0.0"
   },
   "scripts": {
     "start": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
