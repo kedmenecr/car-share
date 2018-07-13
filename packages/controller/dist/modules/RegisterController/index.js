@@ -77,7 +77,7 @@ var C = /** @class */ (function (_super) {
     };
     return C;
 }(React.PureComponent));
-var registerMutation = gql(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  mutation($email: String!, $password: String!) {\n    register(email: $email, password: $password) {\n      path\n      message\n    }\n  }\n"], ["\n  mutation($email: String!, $password: String!) {\n    register(email: $email, password: $password) {\n      path\n      message\n    }\n  }\n"])));
+var registerMutation = gql(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  mutation RegisterMutation($email: String!, $password: String!) {\n    register(email: $email, password: $password) {\n      path\n      message\n    }\n  }\n"], ["\n  mutation RegisterMutation($email: String!, $password: String!) {\n    register(email: $email, password: $password) {\n      path\n      message\n    }\n  }\n"])));
 export var RegisterController = graphql(registerMutation)(C);
 var templateObject_1;
 //# sourceMappingURL=index.js.map

@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js schema:download
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  10.6.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kedmenecr/Projects/Learn/Github/car-share/packages/controller/package.json: Unexpected token | in JSON at position 714
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:109:13
+
+npm manifest: 
+  {
+    "name": "@car-share/controller",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "license": "MIT",
+    "scripts": {
+      "build": "rimraf ./dist && tsc",
+      "schema:download": "apollo schema:download schema.json --endpoint=http://localhost:4000"
+    },
+    "dependencies": {
+      "graphql": "^0.13.2",
+      "graphql-tag": "^2.9.2",
+      "react": "^16.4.1",
+      "react-apollo": "^2.1.6",
+      "react-dom": "^16.4.1"
+    },
+    "devDependencies": {
+      "@types/node": "^10.3.4",
+      "@types/react": "^16.4.0",
+      "@types/react-dom": "^16.0.6",
+      "apollo": "^1.4.0",
+      "rimraf": "^2.6.2",
+      "tslint": "^5.10.0",
+      "tslint-config-prettier": "^1.13.0",
+      "typescript": "^2.9.2"
+    }
+  }|
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
