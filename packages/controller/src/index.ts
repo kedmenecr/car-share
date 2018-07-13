@@ -1,1 +1,1 @@
-export * from './modules/RegisterController';
+export * from "./modules/RegisterController";

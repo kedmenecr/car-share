@@ -1,2 +1,2 @@
-export * from './modules/RegisterController';
+export * from "./modules/RegisterController";
 //# sourceMappingURL=index.js.map
