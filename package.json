@@ -1,5 +1,8 @@
 {
   "private": true,
+  "scripts": {
+    "build:server": "lerna run build --scope={@car-share/common,@car-share/server}"
+  },
   "workspaces": {
     "packages": [
       "packages/*"
@@ -8,5 +11,8 @@
       "**/rimraf",
       "**/rimraf/**"
     ]
+  },
+  "devDependencies": {
+    "lerna": "^2.11.0"
   }
 }
