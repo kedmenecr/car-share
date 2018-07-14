@@ -1,5 +1,6 @@
 import "reflect-metadata";
-import "dotenv/config";
+// tslint:disable-next-line:no-var-requires
+require("dotenv-safe").config();
 import { GraphQLServer } from "graphql-yoga";
 import * as session from "express-session";
 import * as connectRedis from "connect-redis";

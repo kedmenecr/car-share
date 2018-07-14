@@ -1,5 +1,11 @@
 [
   {
+    "name": "production",
+    "type": "postgres",
+    "synchronize": true,
+    "logging": true
+  },
+  {
     "name": "development",
     "type": "postgres",
     "host": "localhost",
@@ -25,19 +31,13 @@
     }
   },
   {
-    "name": "production",
-    "type": "postgres",
-    "synchronize": true,
-    "logging": true
-  },
-  {
     "name": "test",
     "type": "postgres",
     "host": "localhost",
     "port": 5432,
     "username": "root",
     "password": "root",
-    "database": "carsharedb-test",
+    "database": "carsharedb",
     "synchronize": true,
     "logging": false,
     "dropSchema": true,

@@ -1,7 +1,10 @@
 import * as React from "react";
 import { graphql, ChildMutateProps } from "react-apollo";
 import gql from "graphql-tag";
-import { RegisterMutation, RegisterMutationVariables } from "../../modules/RegisterController/__generated__/RegisterMutation";
+import {
+  RegisterMutation,
+  RegisterMutationVariables
+} from "./__generated__/RegisterMutation";
 
 interface Props {
   children: (
@@ -9,7 +12,9 @@ interface Props {
   ) => JSX.Element | null;
 }
 
-class C extends React.PureComponent<ChildMutateProps<Props, RegisterMutation, RegisterMutationVariables>> {
+class C extends React.PureComponent<
+  ChildMutateProps<Props, RegisterMutation, RegisterMutationVariables>
+> {
   submit = async (values: RegisterMutationVariables) => {
     console.log(values);
     const response = await this.props.mutate({
@@ -33,8 +38,8 @@ const registerMutation = gql`
   }
 `;
 
-export const RegisterController: any = graphql<
+export const RegisterController = graphql<
   Props,
   RegisterMutation,
-  RegisterMutationVariables>
-  (registerMutation)(C);
+  RegisterMutationVariables
+>(registerMutation)(C);

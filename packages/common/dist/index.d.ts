@@ -1,1 +1,1 @@
-export * from './yupschemas/user';
+export * from "./yupSchemas/user";

@@ -1,4 +1,3 @@
-
 FROM node
 
 WORKDIR /car-share
@@ -13,6 +12,7 @@ RUN yarn install --production
 COPY ./packages/server/dist ./packages/server/dist
 COPY ./packages/common/dist ./packages/common/dist
 COPY ./packages/server/.env.prod ./packages/server/.env
+COPY ./packages/server/.env.example ./packages/server/
 COPY ./ormconfig.json .
 
 WORKDIR ./packages/server

@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build:server": "lerna run build --scope={@car-share/common,@car-share/server}"
+    "build:server": "lerna run build --scope={@car-share/common,@car-share/server}",
+    "build:web": "lerna run build --scope={@car-share/common,@car-share/web}"
   },
   "workspaces": {
     "packages": [

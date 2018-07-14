@@ -1,16 +1,11 @@
+import { validUserSchema } from "@car-share/common";
+
 import { ResolverMap } from "../../../types/graphql-utils";
 import { User } from "../../../entity/User";
 import { formatYupError } from "../../../utils/formatYupError";
-import {
-  duplicateEmail,
-
-} from "./errorMessages";
-import { validUserSchema } from "@car-share/common"
-//import { registerPasswordValidation } from "../../../yupSchemas";
+import { duplicateEmail } from "./errorMessages";
 import { createConfirmEmailLink } from "./createConfirmEmailLink";
 import { sendEmail } from "../../../utils/sendEmail";
-
-
 
 export const resolvers: ResolverMap = {
   Mutation: {
