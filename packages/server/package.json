@@ -6,7 +6,7 @@
     "@gql2ts/types": "^1.8.0",
     "@types/bcryptjs": "^2.4.1",
     "@types/connect-redis": "^0.0.7",
-    "@types/express-rate-limit": "^2.9.3",
+    "@types/express-rate-limit": "^3.3.3",
     "@types/express-session": "^1.15.8",
     "@types/faker": "^4.1.2",
     "@types/glob": "^5.0.35",
