@@ -57,7 +57,7 @@
     "request-promise": "^4.2.2",
     "sparkpost": "^2.1.2",
     "typeorm": "0.2.0",
-    "uuid": "^3.2.1",
+    "uuid": "^8.2.0",
     "yup": "^0.24.1"
   },
   "scripts": {
